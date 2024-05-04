@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<!-- Mirrored from retrogames.one/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Apr 2024 07:25:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrô Games - 🕹 Platarforma de Jogos de Habilidade Retrô</title>
+
+    <!-- SEO -->
+        <link rel="canonical" href="index.html"/>
+    <meta name="description"
+          content="Bem-vindo à Retrô Games - A melhor plataforma de jogos clássicos no estilo retrô de grandes ganhos no pix, jogue com suas habilidades e receba na hora de maneira fácil e divertida. Jogue Angry Birds, Flappy Bird, Subway Surfers, Super Mario, Fruit Ninja e muito mais!">
+    <meta name="keywords"
+          content="Retrô Games, jogos retrô, jogos antigos no pix, jogos divertidos pra receber no pix, jogos clássicos no pix">
+
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="Retrô Games - 🕹 Platarforma de Jogos de Habilidade Retrô"/>
+    <meta property="og:description"
+          content="Bem-vindo à Retrô Games - A melhor plataforma de jogos clássicos no estilo retrô de grandes ganhos no pix, jogue com suas habilidades e receba na hora de maneira fácil e divertida. Jogue Angry Birds, Flappy Bird, Subway Surfers, Super Mario, Fruit Ninja e muito mais!"/>
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:site_name"
+          content="Retrô Games - 🕹 Platarforma de Jogos de Habilidade Retrô"/>
+    <meta property="og:image" content="assets/images/perfil.jpg"/>
+    <meta property="og:image:secure_url" content="assets/images/perfil.jpg"/>
+    <meta property="og:image:width" content="1024"/>
+    <meta property="og:image:height" content="571"/>
+
+    <meta name="twitter:title"
+          content="Retrô Games - 🕹 Platarforma de Jogos de Habilidade Retrô">
+    <meta name="twitter:description"
+          content="Bem-vindo à Retrô Games - A melhor plataforma de jogos clássicos no estilo retrô de grandes ganhos no pix, jogue com suas habilidades e receba na hora de maneira fácil e divertida. Jogue Angry Birds, Flappy Bird, Subway Surfers, Super Mario, Fruit Ninja e muito mais!">
+    <meta name="twitter:image"
+          content="assets/images/perfil.jpg"> <!-- Substitua pelo link da imagem que deseja exibir -->
+    <meta name="twitter:url" content="index.html"> <!-- Substitua pelo link da sua página -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="VictorSalatiel"/>
+    <meta name="email" content="contato@vinenzo.com.br"/>
+    <meta name="website" content="https://vinenzo.com.br"/>
+    <meta name="Version" content="v1.0.0"/>
+    <meta name="csrf-token" content="NBuQAdREih3vKKZz73GMEpL51UIo7s0gO4xRYuh8">
+
+    <!-- favicon -->
+    <link rel="icon" href="storage/uploads/ANW41Fvl5eRWd8x2ocDBHWCJSj78w9Ws6R10ohNU.png" type="image/x-icon">
+    <link rel="shortcut icon" href="storage/uploads/ANW41Fvl5eRWd8x2ocDBHWCJSj78w9Ws6R10ohNU.png"
+          type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- iziModal -->
+    <link href="assets/css/iziModal.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="assets/css/iziToast.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Fontawesome -->
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Google font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&amp;family=Catamaran:wght@100;200;300;400;500;600;700;800;900&amp;family=Montserrat:wght@100;200;300;400;500&amp;family=Roboto+Condensed:wght@300&amp;display=swap"
+        rel="stylesheet">
+
+    <style>
+        [data-bs-theme=dark] {
+            color-scheme: dark;
+            --bs-body-color: #dee2e6;
+            --bs-body-color-rgb: 222, 226, 230;
+            --bs-body-bg: #212529;
+            --bs-body-bg-rgb: 33, 37, 41;
+            --bs-emphasis-color: #fff;
+            --bs-emphasis-color-rgb: 255, 255, 255;
+            --bs-secondary-color: rgba(222, 226, 230, 0.75);
+            --bs-secondary-color-rgb: 222, 226, 230;
+            --bs-secondary-bg: #343a40;
+            --bs-secondary-bg-rgb: 52, 58, 64;
+            --bs-tertiary-color: rgba(222, 226, 230, 0.5);
+            --bs-tertiary-color-rgb: 222, 226, 230;
+            --bs-tertiary-bg: #2b3035;
+            --bs-tertiary-bg-rgb: 43, 48, 53;
+            --bs-dropdown-link-active-bg: #aa37cc;
+            --bs-primary-text-emphasis: #aa37cc;
+            --bs-secondary-text-emphasis: #a7acb1;
+            --bs-success-text-emphasis: #75b798;
+            --bs-info-text-emphasis: #6edff6;
+            --bs-warning-text-emphasis: #ffda6a;
+            --bs-danger-text-emphasis: #ea868f;
+            --bs-light-text-emphasis: #f8f9fa;
+            --bs-dark-text-emphasis: #dee2e6;
+            --bs-primary-bg-subtle: #031633;
+            --bs-secondary-bg-subtle: #161719;
+            --bs-success-bg-subtle: #051b11;
+            --bs-info-bg-subtle: #032830;
+            --bs-warning-bg-subtle: #332701;
+            --bs-danger-bg-subtle: #2c0b0e;
+            --bs-light-bg-subtle: #343a40;
+            --bs-dark-bg-subtle: #1a1d20;
+            --bs-primary-border-subtle: #084298;
+            --bs-secondary-border-subtle: #41464b;
+            --bs-success-border-subtle: #0f5132;
+            --bs-info-border-subtle: #087990;
+            --bs-warning-border-subtle: #997404;
+            --bs-danger-border-subtle: #842029;
+            --bs-light-border-subtle: #495057;
+            --bs-dark-border-subtle: #343a40;
+            --bs-heading-color: inherit;
+            --bs-link-color: #aa37cc;
+            --bs-link-hover-color: #aa37cc;
+            --bs-link-color-rgb: 110, 168, 254;
+            --bs-link-hover-color-rgb: 139, 185, 254;
+            --bs-code-color: #e685b5;
+            --bs-highlight-color: #dee2e6;
+            --bs-highlight-bg: #664d03;
+            --bs-border-color: #27292d;
+            --bs-border-color-translucent: rgba(91, 89, 89, 0.15);
+            --bs-form-valid-color: #75b798;
+            --bs-form-valid-border-color: #75b798;
+            --bs-form-invalid-color: #ea868f;
+            --bs-form-invalid-border-color: #ea868f;
+        }
+
+        :root {
+
+            --bs-body-bg: #0D131C;
+            --cor-principal: #aa37cc;
+            --cor-de-fundo: #0d131c;
+            --cor-de-fundo-detalhe: #0d131c;
+            --cor-texto-geral: #ffffff;
+            --cor-titulo-lateral: #aa37cc;
+            --cor-botao: #aa37cc;
+            --cor-botao-texto: #ffffff;
+            --cor-botao-secundario: #1A1C20;
+            --cor-botao-secundario-texto: #ffffff;
+            --cor-menu: #c9c9c9;
+            --cor-menu-hover: #ffffff;
+            --cor-background-tarja: #5624d0;
+            --cor-texto-tarja: #ffffff;
+            --cor-nome-time-odds: #aa37cc;
+            --cor-nome-time-odds-hover: #aa37cc;
+            --cor-nome-time-odds-background: #aa37cc;
+            --cor-placar: #aa37cc;
+            --cor-liga: #aa37cc;
+            --cor-fundo-esportes: #fff;
+            --cor-texto-esportes: #000000;
+            --cor-titulo-rodape: #fff;
+            --cor-links-rodape: #8697a2;
+            --cor-background-modo-mini: #9195a3;
+            --bs-primary: #aa37cc;
+            --bs-primary-rgb: #aa37cc;
+            --title-color: #ffffff;
+            --text-color: #98A7B5;
+            --sub-text-color: #656E78;
+            --placeholder-color: #4D565E;
+            --background-color: #24262B;
+            --standard-color: #1C1E22;
+            --shadow-color: #111415;
+            --page-shadow: linear-gradient(to right, #111415, rgba(17, 20, 21, 0));
+            --autofill-color: #f5f6f7;
+            --yellow-color: #FFBF39;
+            --border-radius: .25rem;
+
+        }
+    </style>
+
+    <!-- Main Css -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" id="theme-opt"/>
+
+    <style>
+        body {
+            background-color: #18181a;
+        }
+        .page__navbar {
+            border-right: 1px solid #183375 !important;
+        }
+        .page__content__navbar {
+            border-bottom: 1px solid #183375 !important;
+        }
+        .active-sidebar {
+            border-right: 3px solid #aa37cc  !important;
+        }
+        .page__content__navbar__dir__btn {
+            background: conic-gradient(from 1turn,#aa37cc,#aa37cc26);
+            border-radius: 20px;
+            padding: 10px 25px;
+            z-index: 1;
+        }
+        .btn-success {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #aa37cc;
+            --bs-btn-border-color: #aa37cc;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #aa37cc;
+            --bs-btn-hover-border-color: #aa37cc;
+            --bs-btn-focus-shadow-rgb: 60,153,110;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #aa37cc26;
+            --bs-btn-active-border-color: #aa37cc26;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #aa37cc45;
+            --bs-btn-disabled-border-color: #aa37cc35;
+        }
+        .input-group-text {
+            background-color: #aa37cc;
+        }
+        .btn-primary-theme {
+            background: conic-gradient(from 1turn,#aa37cc,#aa37cc26);
+            border-radius: 5px;
+            padding: 12px 32px;
+        }
+        .table-dark {
+            --bs-table-border-color: #aa37cc;
+        }
+        .btn-outline-success {
+            --bs-btn-color: #aa37cc;
+            --bs-btn-border-color: #aa37cc;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #aa37cc36;
+            --bs-btn-hover-border-color: #aa37cc36;
+            --bs-btn-focus-shadow-rgb: 25,135,84;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #aa37cc45;
+            --bs-btn-active-border-color: #aa37cc45;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #aa37cc26;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #aa37cc26;
+            --bs-gradient: none;
+        }
+        .ui-button.s-conic2 {
+            background-color:  #aa37cc23;
+            background-image: conic-gradient(from 1turn,#aa37cc,#aa37cc36);
+        }
+        .input-search-group input {
+            background-color: #0c1436 !important;
+            border: 1px solid #0c1436;
+        }
+        .input-search-group .input-group-text {
+            background-color: #0c1436;
+            border: 1px solid  #0c1436;
+        }
+        .card .card {
+            --bs-card-bg: #0c1436;
+            background-color: #0c1436;
+        }
+        .card-header {
+            color: #ffffff;
+        }
+        .navbar_list .navbar_list_links a {
+            color: #ffffff;
+        }
+        .nav-link {
+            color: #ffffff;
+        }
+        .form-control {
+            background-color: #18181a26 !important;
+            border: 1px solid #18181a;
+        }
+        .profile-avatar {
+            background-color: #aa37cc;
+        }
+        .dropdown-menu {
+            --bs-dropdown-bg: #0c1436;
+        }
+        .accordion-button {
+            background-color: #0c1436;
+        }
+        a, a:hover {
+            color: #ffffff;
+        }
+        .footer {
+            background-color: #22262b;
+            border-top: 1px solid #22262b;
+            padding: 20px 40px;
+        }
+
+        .text-success-emphasis {
+            color: #ffffff !important;
+        }
+
+        .text-primary {
+            color: #aa37cc !important;
+        }
+
+        .sign-in {
+            background-color: #aa37cc;
+            color: #ffffff;
+        }
+    </style>
+        <link rel="stylesheet" href="assets/css/splide-core.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Q3ENV2D1L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-9Q3ENV2D1L');
+    </script>
+    </head>
+
+<body>
+
+<main class="page">
+        <div class="container-fluid">
+
+        <div class="">
+            <nav class="page__content__navbar">
+    <aside class="page__content__navbar__esq">
+        <div class="d-flex flex-col gap-3">
+            <button class="navbar-toggler-close close-button" type="button">
+                <img src="assets/images/svg/menu-nav.svg" alt="" width="28">
+            </button>
+
+            <a class="page__navbar__logo" href="index.html" style="display:block !important">
+                <img src="storage/uploads/HJIueAbYMXLtwEs8Hq27duZgiB7Z7420HqrLIdb4.png" alt=""
+                     style="max-width:100%; height: 30px;">
+            </a>
+        </div>
+
+        
+        
+            </aside>
+    <aside class="page__content__navbar__dir">
+
+                    <a class="page__content__navbar__dir__btn" href="#" data-izimodal-open="#register-modal"
+               data-izimodal-zindex="20000" data-izimodal-preventclose="">
+                <strong><i class="fa-duotone fa-arrow-right-to-bracket mr-2"></i> Registrar</strong>
+            </a>
+            <a class="sign-in mr-2" href="#" data-izimodal-open="#login-modal" data-izimodal-zindex="20000"
+               data-izimodal-preventclose="">
+                <strong>Entrar</strong>
+            </a>
+            </aside>
+
+</nav>
+
+    <div id="deposit-modal" class="iziModal" data-izimodal-loop="">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="loadingDeposit" class="loading-spinner">
+                <span class="spinner"></span>
+            </div>
+
+            <div id="qrcode-container">
+                <div id="qrcode" style="width:300px; height:300px; margin-top:15px;"></div>
+                <input id="pixcopiaecola" type="text" class="form-control mt-3" value="">
+                <div class="d-grid mt-2">
+                    <button id="copyQrcodePix" class="btn btn-primary" type="button">COPIA CÓDIGO</button>
+                </div>
+                <div class="mt-3 text-center">
+                    <p><i class="fa fa-spin fa-spinner mr-3"></i> Aguardando pagamento...</p>
+                </div>
+            </div>
+
+            <form id="depositForm" method="post" action="#" class="form-login">
+                <input type="hidden" name="_token" value="NBuQAdREih3vKKZz73GMEpL51UIo7s0gO4xRYuh8" autocomplete="off">                <h5 class="mb-3 font-bold">DEPOSITAR VIA PIX</h5>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="email" style="width: 50px;">
+                        <p class="p-1 mb-0">R$</p>
+                    </span>
+                    <input type="number" name="amount" required min="25.00" max="50000.00" class="form-control" placeholder="0,00">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"  style="width: 50px;" id="password"><i class="fa-light fa-address-card text-success-emphasis"></i></span>
+                    <input type="text" name="cpf" class="form-control cpf" required placeholder="DIGITE SEU CPF">
+                </div>
+                <div class="row justify-between list-amount">
+                                                                <div class="col-4 col-lg-2">
+                            <button type="button" class="select_amount">R$ 25.00</button>
+                        </div>
+                                                                    <div class="col-4 col-lg-2">
+                            <button type="button" class="select_amount">R$ 50</button>
+                        </div>
+                                                                    <div class="col-4 col-lg-2">
+                            <button type="button" class="select_amount">R$ 100</button>
+                        </div>
+                                                                    <div class="col-4 col-lg-2">
+                            <button type="button" class="select_amount">R$ 200</button>
+                        </div>
+                                                                    <div class="col-4 col-lg-2">
+                            <button type="button" class="select_amount">R$ 400</button>
+                        </div>
+                                                                    <div class="col-4 col-lg-2">
+                            <button type="button" class="select_amount">R$ 800</button>
+                        </div>
+                                                            </div>
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn-primary-theme btn-block w-full mb-3">
+                        GERAR QRCODE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="login-modal" class="iziModal" data-izimodal-loop="">
+    <div class="modal-dialog">
+        <div class="modal-content modal-body">
+            <div class="row">
+                <div class="col-lg-6 banner-login p-0">
+                    <img src="assets/images/br_bg.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 relative p-0">
+                    <div id="loading" class="loading-spinner">
+                        <span class="spinner"></span>
+                    </div>
+
+                    <form id="loginForm" method="post" action="#" class="form-login">
+                        <input type="hidden" name="_token" value="NBuQAdREih3vKKZz73GMEpL51UIo7s0gO4xRYuh8" autocomplete="off">                        <h5 class="mb-3 font-bold">Entrar</h5>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="email"><i
+                                    class="fa-regular fa-envelope text-success-emphasis"></i></span>
+                            <input type="email" name="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="password"><i
+                                    class="fa-regular fa-lock text-success-emphasis"></i></span>
+                            <input type="password" name="password" class="form-control" placeholder="Senha">
+                        </div>
+                        <p>
+                            <a href="forgot-password.html" class="text-white text-small">Esqueci minha
+                                senha</a>
+                        </p>
+                        <div class="d-grid mt-3">
+                            <button type="submit" class="btn-primary-theme btn-block w-full mb-3">
+                                Entrar
+                            </button>
+                        </div>
+                        <p>Novo no Retrô Games? <a href="#"
+                                                                              onclick="openRegister(event)"><strong>Criar
+                                    conta</strong></a></p>
+                    </form>
+
+                    <div class="login-wrap">
+                        <div class="line-text">
+                            <div class="l"></div>
+                            <div class="t">Faça login diretamente com</div>
+                            <div class="l"></div>
+                        </div>
+
+                        <div class="social-group">
+                            <a href="https://accounts.google.com/o/oauth2/auth?scope=openid+profile+email&amp;response_type=code&amp;state=dPy3OsFp5aD5AcOTaZZbIj3gm8uruvxzGqFy4GwX" class="login-with-google-btn w-full">
+                                Logar com o Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register-modal" class="iziModal" data-izimodal-loop="">
+    <div class="modal-dialog">
+        <div class="modal-content modal-body">
+            <div class="row">
+                <div class="col-lg-6 banner-login">
+                    <img src="assets/images/br_bg.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="relative" style="height: 100%;">
+                        <div id="loading_register" class="loading-spinner">
+                            <span class="spinner"></span>
+                        </div>
+
+                        <form id="registrationForm" action="#" method="post" class="form-login">
+                            <input type="hidden" name="_token" value="NBuQAdREih3vKKZz73GMEpL51UIo7s0gO4xRYuh8" autocomplete="off">                            <h5 class="mb-3 font-bold">Cadastrar</h5>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="user"><i
+                                        class="fa-regular fa-user text-success-emphasis"></i></span>
+                                <input type="text" name="name" class="form-control" placeholder="Nome de usuário"
+                                       aria-label="Nome de usuário" aria-describedby="user" required>
+                            </div>
+                            
+                            
+                            
+                            
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="email"><i
+                                        class="fa-regular fa-envelope text-success-emphasis"></i></span>
+                                <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="password"><i
+                                        class="fa-regular fa-lock text-success-emphasis"></i></span>
+                                <input id="passwordField" type="password" name="password" class="form-control"
+                                       placeholder="Senha" required>
+                                <button type="button" id="togglePassword" class="input-group-text"
+                                        onclick="togglePasswordField()"><i id="eyeIcon" class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="password"><i
+                                        class="fa-regular fa-lock text-success-emphasis"></i></span>
+                                <input id="passwordConfirmField" type="password" name="password_confirmation"
+                                       class="form-control" placeholder="Confirme a senha" required>
+                                <button type="button" id="togglePassword" class="input-group-text"
+                                        onclick="togglePasswordField()"><i id="eyeIcon" class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="password"><i
+                                        class="fa-brands fa-whatsapp text-success-emphasis"></i></span>
+                                <input type="text" name="phone" class="form-control sp_celphones" placeholder="Whastapp"
+                                       required>
+                            </div>
+                                                        <div class="d-grid mt-3">
+                                <button type="submit" class="btn-primary-theme btn-block w-full mb-3">
+                                    Registrar-se
+                                </button>
+                                <p class="text-center">
+                                    Ao clicar no botão Criar conta, você aceita nossos <a href="#"
+                                                                                          class="text-success-emphasis">termos
+                                        de uso</a> e <a href="#" class="text-success-emphasis">política</a> de <a href="#"
+                                                                                                                 class="text-success-emphasis">privacidade</a>.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <nav id="navbarContent" class="page__navbar">
+    <div class="navbar_menu_list">
+        <ul id="nav_accordion" class="navbar_list sidebar nav flex-column">
+            <li class="navbar_list_links mb-3">
+                <a href="#" class="btn btn-success text-white font-bold btn-gains">
+                    Bônus de 100%
+                    <i class="fa-light fa-rocket-launch "></i>
+                </a>
+            </li>
+
+            <li class="navbar_list_links">
+                <a href="index.html" title="Visão Geral" class="active-sidebar">
+                    <img src="assets/images/svg/home2.svg" alt="" width="24">
+                    Principal
+                </a>
+            </li>
+
+            <li class="navbar_list_links">
+                <a href="index456e.html" title="Menu de Afiliado"
+                   class="">
+                    <img src="assets/images/svg/affiliate.svg" alt="" width="24">
+                    Painel do Afiliado
+                </a>
+            </li>
+
+            <li class="navbar_list_links">
+                <a href="como-funciona.html" title="Como funciona?"
+                   class="">
+                    <img src="assets/images/svg/about.svg" alt="" width="24">
+                    Como Funciona?
+                </a>
+            </li>
+            <li class="navbar_list_links">
+                <a href="suporte.html" title="Suporte"
+                   class="">
+                    <img src="assets/images/svg/suporte.svg" alt="" width="24">
+                    Suporte
+                </a>
+            </li>
+            <li class="navbar_list_links">
+                <a href="sobre-nos.html" title="Sobre Nós"
+                   class="">
+                    <img src="assets/images/svg/sobre.svg" alt="" width="24">
+                    Sobre Nós
+                </a>
+            </li>
+            <div class="mt-5 navbar_menu_title">
+                <h4>OS MAIS JOGADOS</h4>
+            </div>
+
+            <!-- arrumado pelo zé -->
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="sub"
+                       data-min-bet="30.00"
+                       data-xmeta="10"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYP9JTD6Q4AAG41TSCTT1WB.jpg" alt="" width="24">
+                        Subway Surf
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="candy"
+                       data-min-bet="20.00"
+                       data-xmeta="20"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPRZ0HHSKGREP4Z54T0CXP.webp" alt="" width="24">
+                        Candy Crush
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="guitarhero"
+                       data-min-bet="20.00"
+                       data-xmeta="10"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HR8AJR65FXFY342GQX36PFNH.webp" alt="" width="24">
+                        Guitar Hero
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="sonic"
+                       data-min-bet="20.00"
+                       data-xmeta="10"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPHR3A1RF80BKJQ2WW5G6X.png" alt="" width="24">
+                        Sonic Dash
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="dragoncash"
+                       data-min-bet="20.00"
+                       data-xmeta="15"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPRRQ0J2VC0V9MCZCE4ZPB.png" alt="" width="24">
+                        Dragon Cash
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="dino"
+                       data-min-bet="30.00"
+                       data-xmeta="15"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPFVDVRHWMMTH66GZD34XJ.png" alt="" width="24">
+                        Dino Cash 2
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="jetpack"
+                       data-min-bet="3.00"
+                       data-xmeta="10"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPRWW9AA3MKVP99153JPH9.png" alt="" width="24">
+                        Jet Pack
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="mario2"
+                       data-min-bet="50.00"
+                       data-xmeta="2"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPJDRAA6QNMXXRGMK85BSC.jpg" alt="" width="24">
+                        Mario Run
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="flappycopter"
+                       data-min-bet="20.00"
+                       data-xmeta="15"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPJX8A8J6SSZSPE45DEPZ7.png" alt="" width="24">
+                        Flappy Copter
+                    </a>
+                </li>
+                            <li class="navbar_list_links">
+                    <a href="index.html"
+                       class="d-steam-card-wrapper js-steamCard-link"
+                       data-uuid="fruit"
+                       data-min-bet="20.00"
+                       data-xmeta="10"
+                       data-need-bet="yes"
+                    >
+                        <img src="storage/01HQYPEPTC6R9JE5PE38BCQFE9.jpg" alt="" width="24">
+                        Fruit Cash
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</nav>
+
+            <div class="page__content">
+                <div class="  container-fluid ">
+
+                    <section id="image-carousel" class="splide" aria-label="">
+                        <div class="splide__track">
+                            <div class="splide-banner">
+                                Depósito Mínimo de R$ 25.00 Reais <span style="margin-left: 10px"><i
+                                        class="fa-solid fa-fire"></i></span>
+                            </div>
+                            <ul class="splide__list">
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQT8E3B9NE40XKQ360T9Q1.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQT56WBRK72134GR0RX5P3.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQRC0VBHRFG7BGZCDMHXEN.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQRZYT6MYKXXZM9P0WKVHF.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQQYFY24S84REA9Q40PSH8.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQ35EPCEBHHDESQ4TD1KGB.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQQ6N36ZYP7MGDVMWTVCJP.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYQQKFHGB2G65ETBYT8NDZ7.png" alt="">
+                                        </a>
+                                    </li>
+                                                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <img src="storage/01HQYRJ7CKH2RPK4S9J1GAY3CW.png" alt="">
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Search -->
+                    <form action="https://retrogames.one/" method="GET">
+                        <div class="input-group input-search-group">
+                            <input type="text" name="search" value="" class="form-control"
+                                   placeholder="Digite o Nome do Jogo que Você Procura..." aria-label="Pesquisar"
+                                   aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa-duotone fa-magnifying-glass"></i> </span>
+                        </div>
+                    </form>
+
+                    <!-- Jogos Exclusivos da Casa meu Parceiro -->
+                    
+                        <div class="mt-5">
+                            <div class="header-box">
+    <div class="header-title">
+        <i class="fa-regular fa-gamepad-modern text-primary" style="font-size: 23px;margin-right: 10px;"></i>
+        <h4>Jogos Habilidade</h4>
+    </div>
+    <div>
+        <a href="games4e31.html?tab=exclusives"> Ver todos  <i class="fa-regular fa-chevron-right text-primary"  style="font-size: 18px;margin-left: 10px;"></i></a>
+    </div>
+</div>
+                        </div>
+
+                        <div class="divCardsGames d-steam-cards js-steamCards">
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="sub"
+                               data-xmeta="10"
+                               data-min-bet="30.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYP9JSDPQ8D0SCHSBBF48QM.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="candy"
+                               data-xmeta="20"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPRZ0GVQ8GTET4C674R1ET.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="guitarhero"
+                               data-xmeta="10"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HR8AJR5A8QSDX30E4HQ872C4.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="sonic"
+                               data-xmeta="10"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPHR1XAR6J5XNJK2KAKMR2.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="dragoncash"
+                               data-xmeta="15"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPRRMTVEZWPPRPKSCJVBQ7.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="dino"
+                               data-xmeta="15"
+                               data-min-bet="30.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPFVDTEDDXQG0BZKJ1ME7R.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="jetpack"
+                               data-xmeta="10"
+                               data-min-bet="3.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPRWV9BGV6T9HTSNWR4MMD.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="mario2"
+                               data-xmeta="2"
+                               data-min-bet="50.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPJDQ5Q998FRW9EZNBSW7B.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="flappycopter"
+                               data-xmeta="15"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPJX89PS9EHKE3H8WWAR7B.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="fruit"
+                               data-xmeta="10"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPEPTACEJRGYA556BHXPC3.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="angry"
+                               data-xmeta="10"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPF872FQGV23JZCCE0K36D.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="tample"
+                               data-xmeta="10"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPHDV86S99JWT07GB15K5Z.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                        <a href="index.html"
+                               class="cardGames d-steam-card-wrapper js-steamCard-link"
+                               data-uuid="mario"
+                               data-xmeta="10"
+                               data-min-bet="20.00"
+                               data-need-bet="yes">
+                                
+                               <div class="d-steam-card js-steamCard relative"
+                                 style="
+                                    background-image: url('storage/01HQYPCJPTVE3J52KXSN60X37K.jpg');
+                                    object-fit: cover; padding: 0 0 150% 0; ">
+                                </div>
+                            </a>
+                                                    </div>
+                    
+                    <br>
+                     
+                        <div class="mt-5">
+                            <div class="header-box">
+    <div class="header-title">
+        <i class="fa-regular fa-gamepad-modern text-primary" style="font-size: 23px;margin-right: 10px;"></i>
+        <h4>Em Breve</h4>
+    </div>
+    <div>
+        <a href="#"> Ver todos  <i class="fa-regular fa-chevron-right text-primary"  style="font-size: 18px;margin-left: 10px;"></i></a>
+    </div>
+</div>
+                        </div>
+
+                        <div class="divCardsGames d-steam-cards js-steamCards">
+                                                            <a href="#"
+                               class="cardGames d-steam-card-wrapper">
+                                <div class="cardGames d-steam-card js-steamCard"
+                                     style="background-image: url('storage/01HQYPVA3V2E9H39ZZK6074ZCG.jpg');object-fit: cover;
+                                    padding: 0 0 150% 0;"></div>
+                            </a>
+                                                        <a href="#"
+                               class="cardGames d-steam-card-wrapper">
+                                <div class="cardGames d-steam-card js-steamCard"
+                                     style="background-image: url('storage/01HQYPTVPJ2R4KZKCA40ZH5T4M.jpg');object-fit: cover;
+                                    padding: 0 0 150% 0;"></div>
+                            </a>
+                                                        <a href="#"
+                               class="cardGames d-steam-card-wrapper">
+                                <div class="cardGames d-steam-card js-steamCard"
+                                     style="background-image: url('storage/01HQYPX522RXKYW4M0BCXG4PZ4.jpg');object-fit: cover;
+                                    padding: 0 0 150% 0;"></div>
+                            </a>
+                                                        <a href="#"
+                               class="cardGames d-steam-card-wrapper">
+                                <div class="cardGames d-steam-card js-steamCard"
+                                     style="background-image: url('storage/01HQYPW2MXXM6ZKTFJ922EEW47.jpg');object-fit: cover;
+                                    padding: 0 0 150% 0;"></div>
+                            </a>
+                                                    </div>
+                                        <br>
+
+                    <div class="mt-5">
+                        <div class="header-box">
+    <div class="header-title">
+        <i class="fa-light fa-circle-info text-primary" style="font-size: 23px;margin-right: 10px;"></i>
+        <h4>F.A.Q</h4>
+    </div>
+    <div>
+        <a href="como-funciona.html"> Saiba mais  <i class="fa-regular fa-chevron-right text-primary"  style="font-size: 18px;margin-left: 10px;"></i></a>
+    </div>
+</div>
+                    </div>
+
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Qual é o valor mínimo para depósito?
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                Na nossa plataforma, o valor mínimo de depósito é de <strong>R$ 10 reais</strong>.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Qual é o valor mínimo para saque?
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+                Na nossa plataforma, o valor mínimo de saque é de 10 reais, sem limite máximo estabelecido.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Quais são as regras do programa de CPA (Custo por Aquisição)?
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+                <p>No nosso programa de CPA, as comissões são definidas da seguinte forma:</p>
+
+                <br>
+                <p><i class="fa-solid fa-check mr-2"></i> Para perfis de grande alcance, a comissão é de R$40, com um valor de Baseline de R$70.</p>
+                <p><i class="fa-solid fa-check mr-2"></i> Para outros perfis, o CPA é de R$20, com um valor de Baseline de R$40.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="footer">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <div class="footer-info">
+                <div>
+                    <img src="storage/uploads/HJIueAbYMXLtwEs8Hq27duZgiB7Z7420HqrLIdb4.png" alt="Logo" class="footer-logo" width="">
+                    <img src="assets/images/tls.svg" alt="" width="40">
+                    <img src="assets/images/%2b18.png" alt="" width="38">
+                    <img src="assets/images/curacao.png" alt="" width="100">
+                    <img src="assets/images/800cfc1481265228498378721645f5f4-kineko.png" alt="" width="100">
+                </div>
+                <p class="/sobre-nos">
+                    <strong>Retrô Games</strong> é uma plataforma dedicada a
+                    oferecer a melhor experiência aos jogadores.
+                    Estamos confiantes de que a <strong>Retrô Games</strong>
+                    revolucionará a jogabilidade e forma de ganhos online.
+                    Experimente! Divirta-se jogando e conquiste vitórias!
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+
+            <div class="footer-right">
+                <div class="footer-social">
+                    <div class="row">
+                                                
+                        
+                        
+                                            </div>
+                </div>
+                <a href="https://www.responsiblegambling.org/"><img src="assets/images/responsible-gambling.svg" alt="" width="90"></a>
+                
+                <div>
+                    <p class="mb-0">©2024 Retro Games - Todos os Direitos Reservados</p>
+                    <p><small>Desenvolvido &#9829; por: <a href="https://crieart.com.br/" class="text-success">Agência Crie Art Soluções Digitais</a></small></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>                </div>
+            </div>
+        </div>
+        <script>
+            var links = document.querySelectorAll('.js-steamCard-link');
+
+            links.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    var needBet = this.getAttribute('data-need-bet');
+                    const xmeta = this.getAttribute('data-xmeta');
+                    const maxBet = Number(this.getAttribute('data-min-bet'));
+                    const maxBetFormatted = new Intl.NumberFormat('pt-BR', {
+                        style: 'currency',
+                        currency: 'BRL'
+                    }).format(maxBet);
+
+                    if (needBet === 'yes') {
+                        event.preventDefault();
+
+                        // Inicia o SweetAlert2 para escolha do valor da aposta
+                        Swal.fire({
+                            title: 'Escolha o Valor da sua Aposta',
+                            text: 'Sua meta é ' + xmeta + 'x o valor apostado! O jogo encerra sozinho após isso. Valor Máximo: ' + maxBetFormatted,
+                            input: 'number',
+                            inputAttributes: {
+                                min: 1,
+                            },
+                            inputValidator: (value) => {
+                                if (!value) {
+                                    return 'Você precisa Escolher um Valor!';
+                                }
+
+                                if (value > maxBet) {
+                                    return 'O valor máximo de aposta é ' + maxBetFormatted;
+                                }
+                            },
+                            confirmButtonText: 'Apostar',
+                            showCancelButton: true,
+                            cancelButtonText: 'Cancelar'
+                        }).then((result) => {
+                            if (result.isConfirmed && result.value) {
+                                window.location.href = this.href + '/' + result.value;
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+    </div>
+    <style>
+        .divCardsGames {
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        display: block; /* or display: block; depending on your layout needs */
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: start;
+        column-count: 2;
+    }
+}
+
+        }
+        .cardGames {
+            object-fit: cover;
+                                    
+         
+            @media screen and (max-width: 600px) {
+                width: 40vw;
+                height: 50vw;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</main>
+
+<!-- javascript -->
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/iziModal.min.js"></script>
+<script src="assets/js/iziToast.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
+
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <script>
+
+        /// intervalo de consulta
+        let intervalId;
+
+        $("#deposit-modal").iziModal({
+            title: 'Depósito',
+            subtitle: 'Escolha ou insira o valor do depósito',
+            icon:'fa-solid fa-money-bill-transfer',
+            headerColor: '#1A1C1F',
+            theme: 'dark',  // light
+            background:  '#202327',
+            width: 700,
+            closeOnEscape: false,
+            overlayClose: false,
+            onFullscreen: function(){},
+            onResize: function(){},
+            onOpening: function(){
+                $('.money').mask('000.000.000.000.000,00', {reverse: true});
+                $('.cpf').mask('000.000.000-00', {reverse: true});
+            },
+            onOpened: function(){
+            },
+            onClosing: function(){},
+            onClosed: function(){
+                clearInterval(intervalId);
+            },
+            afterRender: function(){}
+        });
+
+        document.getElementById("copyQrcodePix").addEventListener("click", function() {
+            // Seleciona o conteúdo do input
+            var inputElement = document.getElementById("pixcopiaecola");
+            inputElement.select();
+            inputElement.setSelectionRange(0, 99999);  // Para dispositivos móveis
+
+            // Copia o conteúdo para a área de transferência
+            document.execCommand("copy");
+
+            iziToast.show({
+                title: 'Sucesso',
+                message: 'Chave Pix Copiada com sucesso',
+                theme: 'dark',
+                icon: 'fa-solid fa-check',
+                iconColor: '#ffffff',
+                backgroundColor: '#23ab0e',
+                position: 'topRight',
+                timeout: 1500,
+                onClosing: function () {},
+                onClosed: function () {
+
+                }
+            });
+        });
+
+        /**
+         * Consult Status Transaction
+         * @param idTransaction
+         */
+        function consultStatusTransaction(idTransaction)
+        {
+            fetch('suitpay/consult-status-transaction.html', {
+                method: 'POST',
+                body: JSON.stringify({
+                    idTransaction: idTransaction
+                }),
+                headers: new Headers({
+                    'Content-Type': 'application/json; charset=UTF-8'
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if(data.status === 'PAID') {
+                        clearInterval(intervalId);
+
+                        setTimeout(function() {
+                            window.location.replace('index456e.html');
+                        }, 500);
+                    }
+                })
+                .catch(error => {
+
+                })
+                .finally(() => {
+
+                });
+        }
+
+        /// Deposit Form
+        document.getElementById('depositForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+
+            // Exibe o loading
+            const loadingElement = document.getElementById('loadingDeposit');
+            loadingElement.style.display = 'block';
+
+            const formData = new FormData(this);
+
+            fetch('suitpay/qrcode-pix.html', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if(data.status) {
+                        var divQrcode = document.getElementById('qrcode-container');
+                        divQrcode.style.display = 'block';
+
+                        var qrcode = new QRCode( document.getElementById('qrcode'), {
+                            width : 300,
+                            height : 300
+                        });
+
+                        var inputElement = document.getElementById("pixcopiaecola");
+                        inputElement.value = data.qrcode;
+
+                        qrcode.makeCode(data.qrcode);
+
+                        var div = document.getElementById('depositForm');
+                        div.style.display = 'none';
+
+                        intervalId = setInterval(function () {
+                            consultStatusTransaction(data.idTransaction);
+                        }, 5000);
+                    }else{
+                        if(data.error != undefined) {
+                            iziToast.show({
+                                title: 'Atenção',
+                                message: data.error,
+                                theme: 'dark',
+                                icon: 'fa-regular fa-circle-exclamation',
+                                iconColor: '#ffffff',
+                                backgroundColor: '#b51408',
+                                position: 'topRight'
+                            });
+                        }else{
+                            Object.entries(data).forEach(([key, value]) => {
+                                iziToast.show({
+                                    title: 'Atenção',
+                                    message: value[0],
+                                    theme: 'dark',
+                                    icon: 'fa-regular fa-circle-exclamation',
+                                    iconColor: '#ffffff',
+                                    backgroundColor: '#b51408',
+                                    position: 'topRight'
+                                });
+                            });
+                        }
+
+                    }
+
+                    loadingElement.style.display = 'none';
+                })
+                .catch(error => {
+                    loadingElement.style.display = 'none';
+                })
+                .finally(() => {
+
+                });
+        });
+
+        /// Handle Button
+        function handleButtonClick(event) {
+            const amountValue = event.target.textContent.replace('R$ ', '');  // Obtemos o valor sem o prefixo 'R$ '
+            document.querySelector('input[name="amount"]').value = amountValue;  // Atualizamos o valor do input
+        }
+
+        const buttons = document.querySelectorAll('.select_amount');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', handleButtonClick);
+        });
+    </script>
+
+    <script>
+
+    </script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script>
+        $("#login-modal").iziModal({
+            title: 'VAMOS JOGAR?',
+            subtitle: 'Estamos te esperando para mais uma rodada!',
+            headerColor: '#202327',
+            theme: 'dark',  // light
+            background: '#202327',
+            width: 700,
+            closeOnEscape: false,
+            overlayClose: false,
+            onFullscreen: function () {
+            },
+            onResize: function () {
+            },
+            onOpening: function () {
+            },
+            onOpened: function () {
+            },
+            onClosing: function () {
+            },
+            onClosed: function () {
+            },
+            afterRender: function () {
+            }
+        });
+
+        $("#register-modal").iziModal({
+            title: 'REGISTRAR-SE',
+            subtitle: 'Estamos te esperando para mais uma rodada!',
+            headerColor: '#202327',
+            theme: 'dark',  // light
+            background: '#202327',
+            width: 700,
+            closeOnEscape: false,
+            overlayClose: false,
+            onFullscreen: function () {
+            },
+            onResize: function () {
+            },
+            onOpening: function () {
+                var SPMaskBehavior = function (val) {
+                        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+                    },
+                    spOptions = {
+                        onKeyPress: function (val, e, field, options) {
+                            field.mask(SPMaskBehavior.apply({}, arguments), options);
+                        }
+                    };
+
+                $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+            },
+            onOpened: function () {
+            },
+            onClosing: function () {
+            },
+            onClosed: function () {
+                limparCampos();
+            },
+            afterRender: function () {
+            }
+        });
+
+        function limparCampos() {
+            const campos = document.querySelectorAll('input'); // Seleciona todos os campos de entrada
+
+            campos.forEach(campo => {
+                campo.value = ''; // Limpa o valor de cada campo
+            });
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+
+            // Exibe o loading
+            const loadingElement = document.getElementById('loading');
+            loadingElement.style.display = 'block';
+
+            const formData = new FormData(this);
+
+            fetch('admin/login.html', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status) {
+                        iziToast.show({
+                            title: 'Sucesso',
+                            message: 'Usuário logado com sucesso',
+                            theme: 'dark',
+                            icon: 'fa-solid fa-check',
+                            iconColor: '#ffffff',
+                            backgroundColor: '#23ab0e',
+                            position: 'topRight',
+                            timeout: 500,
+                            onClosing: function () {
+                            },
+                            onClosed: function () {
+                                $("#login-modal").iziModal('close');
+                                window.location.replace('index.html');
+                            }
+                        });
+                    } else {
+                        if (data.error != undefined) {
+                            iziToast.show({
+                                title: 'Atenção',
+                                message: data.error,
+                                theme: 'dark',
+                                icon: 'fa-regular fa-circle-exclamation',
+                                iconColor: '#ffffff',
+                                backgroundColor: '#b51408',
+                                position: 'topRight'
+                            });
+                        } else {
+                            Object.entries(data).forEach(([key, value]) => {
+                                iziToast.show({
+                                    title: 'Atenção',
+                                    message: value[0],
+                                    theme: 'dark',
+                                    icon: 'fa-regular fa-circle-exclamation',
+                                    iconColor: '#ffffff',
+                                    backgroundColor: '#b51408',
+                                    position: 'topRight'
+                                });
+                            });
+                        }
+
+                    }
+
+                    loadingElement.style.display = 'none';
+                })
+                .catch(error => {
+
+
+                    console.error('Erro ao enviar requisição:', error);
+                    loadingElement.style.display = 'none';
+                })
+                .finally(() => {
+
+                });
+        });
+
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+
+            // Exibe o loading
+            const loadingElement = document.getElementById('loading_register');
+            loadingElement.style.display = 'block';
+
+            const formData = new FormData(this);
+
+            fetch('register.html', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status) {
+                        iziToast.show({
+                            timeout: 500,
+                            title: 'Sucesso',
+                            message: 'Usuário logado com sucesso',
+                            theme: 'dark',
+                            icon: 'fa-solid fa-check',
+                            iconColor: '#ffffff',
+                            backgroundColor: '#23ab0e',
+                            position: 'topRight',
+                            onClosing: function () {
+                            },
+                            onClosed: function () {
+                                $("#register-modal").iziModal('close');
+                                window.location.replace('index.html');
+                            }
+                        });
+                    } else {
+                        if (data.error != undefined) {
+                            iziToast.show({
+                                title: 'Atenção',
+                                message: data.error,
+                                theme: 'dark',
+                                icon: 'fa-regular fa-circle-exclamation',
+                                iconColor: '#ffffff',
+                                backgroundColor: '#b51408',
+                                position: 'topRight'
+                            });
+                        } else {
+                            Object.entries(data).forEach(([key, value]) => {
+                                iziToast.show({
+                                    title: 'Atenção',
+                                    message: value[0],
+                                    theme: 'dark',
+                                    icon: 'fa-regular fa-circle-exclamation',
+                                    iconColor: '#ffffff',
+                                    backgroundColor: '#b51408',
+                                    position: 'topRight'
+                                });
+                            });
+                        }
+                    }
+
+                    loadingElement.style.display = 'none';
+                })
+                .catch(error => {
+
+
+                    console.error('Erro ao enviar requisição:', error);
+                    loadingElement.style.display = 'none';
+                });
+        });
+
+        function togglePasswordField() {
+            const passwordField = document.getElementById('passwordField');
+            const passwordConfirmField = document.getElementById('passwordConfirmField');
+            const toggleButton = document.getElementById('togglePassword');
+            const eyeIcon = document.getElementById('eyeIcon');
+
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                passwordConfirmField.type = 'text';
+                eyeIcon.className = 'fa-regular fa-eye-slash';
+            } else {
+                passwordField.type = 'password';
+                passwordConfirmField.type = 'password';
+                eyeIcon.className = 'fa-regular fa-eye';
+            }
+        }
+
+        function openRegister(event) {
+            event.preventDefault();
+
+            $("#login-modal").iziModal('close');
+            $("#register-modal").iziModal('open');
+        }
+    </script>
+
+    
+        <script src="assets/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elemento = document.getElementById('splide-soccer');
+
+            if (elemento) {
+                new Splide('#splide-soccer', {
+                    type: 'loop',
+                    drag: 'free',
+                    focus: 'center',
+                    autoplay: 'play',
+                    perPage: 3,
+                    arrows: false,
+                    pagination: false,
+                    breakpoints: {
+                        640: {
+                            perPage: 1,
+                        },
+                    },
+                    autoScroll: {
+                        speed: 1,
+                    },
+                }).mount();
+            }
+
+            new Splide('#image-carousel', {
+                arrows: false,
+                pagination: false,
+                type: 'loop',
+                autoplay: 'play',
+            }).mount();
+        });
+    </script>
+<div>
+    
+    
+    
+    
+
+    
+
+    
+
+    
+</div>
+</body>
+
+<!-- Mirrored from retrogames.one/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Apr 2024 07:26:00 GMT -->
+</html>
